@@ -2,7 +2,6 @@
 import './Weather.css'
 
 function WeatherInfos({ weather }) {
-  console.log(weather)
   return (
     <div className="container-infos">
       <h2>{weather.name}</h2>
@@ -10,7 +9,7 @@ function WeatherInfos({ weather }) {
         <img
           src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`}
         />
-        <p className="temperature">{Math.round(weather.main.temp)} ºC</p>
+        <p className="temperature">{Math.round(weather.main.temp)}ºC</p>
       </div>
       <p className="description">{weather.weather[0].description}</p>
       <div className="details">
