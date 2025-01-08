@@ -26,13 +26,21 @@ function App() {
   }
 
   return (
+    <>
+   <div style={{ 
+      backgroundImage: `url()` 
+    }}>
       <div className='container'>
         <h1>Previsão do Tempo</h1>
+        <div className='search'>        
         <input ref={inputRef} type="text" placeholder='Digite o nome da cidade'/>
         <button onClick={searchCity}>Buscar</button>
+        </div>
         {weather && <WeatherInfos weather={weather}/>}
         {nextDays && <WeatherNextDays nextDays={nextDays}/>}
       </div>
+      </div>
+      </>
   )
 }
 

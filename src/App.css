@@ -1,20 +1,21 @@
 .container{
     max-width: 1000px;
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
+    text-align: center;
 }
 
 input{
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px 0 0 20px;
     border: none;
     width: 60%;
-    margin-top: 30px;
+    margin-top: 10px;
     max-width: 300px;
     outline: none;
 }
@@ -22,13 +23,21 @@ input{
 button{
     background-color: #ff9800;
     border: 0;
-    padding: 10px;
+    padding: 15px;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
     color: #fff;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 button:hover{
     background-color: #f57c00;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
